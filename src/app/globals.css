@@ -19,6 +19,14 @@ body {
   color: var(--foreground);
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
 /* Extra utility class */
 @layer utilities {
   .text-balance {
