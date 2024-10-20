@@ -1,3 +1,5 @@
+"use client"; // تحديد أن المكون هو Client Component
+
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
