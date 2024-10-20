@@ -1,4 +1,6 @@
-export default function About() {
+import { Suspense } from "react";
+
+function AboutContent() {
   return (
     <div className="max-w-6xl mx-auto space-y-4 p-4">
       <h1 className="text-2xl font-medium text-amber-600">About</h1>
@@ -32,5 +34,13 @@ export default function About() {
         website. Happy browsing!
       </p>
     </div>
+  );
+}
+
+export default function About() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AboutContent />
+    </Suspense>
   );
 }
