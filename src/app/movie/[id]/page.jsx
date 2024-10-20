@@ -22,7 +22,7 @@ export default async function MoviePage({ params }) {
           className="rounded-lg"
           style={{
             maxWidth: "100%",
-            height: "100%"
+            height: "100%",
           }}
           placeholder="blur"
           blurDataURL="/spinner.svg"
