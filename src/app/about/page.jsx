@@ -1,4 +1,4 @@
-"use client"; // تحديد أن المكون هو Client Component
+"use client";
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
@@ -43,7 +43,11 @@ function AboutContent() {
 export default function About() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <AboutContent />
+      <InnerAboutContent />
     </Suspense>
   );
+}
+
+function InnerAboutContent() {
+  return <AboutContent />;
 }
